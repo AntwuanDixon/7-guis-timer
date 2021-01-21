@@ -1,0 +1,8 @@
+meter {
+    height: 50px;
+    width: 300px;
+}
+
+#timer-value {
+    display: none;
+}
