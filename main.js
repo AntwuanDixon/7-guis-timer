@@ -38,7 +38,7 @@ function triggerTimer () {
         else {
             i = i + 0.1;
             timerSecondsElapsed.innerHTML = i.toFixed(1);
-        }    
+        }  
     }
 }
 
@@ -54,3 +54,5 @@ resetBtn.addEventListener('click', function () {
     meter.value = 0;
     triggerTimer ();
 })
+
+triggerTimer ();
