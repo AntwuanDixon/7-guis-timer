@@ -30,15 +30,15 @@ function triggerTimer () {
     function countUp () {
         meterStep = 100/maxTime;
         meter.value = meterStep.toFixed(2) * i;
-        if (i >= maxTime) {
+        var fixedCount = i.toFixed(1)
+        if (fixedCount >= maxTime) {
             kicked = false;
             clearInterval(timer);
             secondsElapsed = i;
         }
         else {
             i = i + 0.1;
-            i = (Math.floor(i * 100) / 100);
-            timerSecondsElapsed.innerHTML = Math.floor(i.toFixed(1));
+            timerSecondsElapsed.innerHTML = i.toFixed(1);
             console.log(i);
         }    
     }
