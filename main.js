@@ -20,7 +20,6 @@ function triggerTimer () {
     maxTimerSeconds.innerHTML = timerSlider.value;
     maxTime = parseInt(timerSlider.value);
     var i = secondsElapsed;
-    console.log(i);
     var meterStep;
     if (kicked === false) {
         timer = setInterval(countUp, 100);
@@ -39,7 +38,6 @@ function triggerTimer () {
         else {
             i = i + 0.1;
             timerSecondsElapsed.innerHTML = i.toFixed(1);
-            console.log(i);
         }    
     }
 }
